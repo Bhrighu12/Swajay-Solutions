@@ -27,7 +27,13 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="bg-gray-50 py-24">
+        <section className="relative py-24 overflow-hidden" style={{
+            background: `
+                radial-gradient(circle at top right, rgba(0, 180, 216, 0.08), transparent 60%),
+                radial-gradient(circle at bottom left, rgba(114, 9, 183, 0.06), transparent 55%),
+                linear-gradient(180deg, #f9fbff 0%, #f4f7fc 100%)
+            `
+        }}>
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-secondary">Why Swajay Solutions?</h2>

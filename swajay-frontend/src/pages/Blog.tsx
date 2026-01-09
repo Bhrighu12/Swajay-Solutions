@@ -1,6 +1,9 @@
+import Breadcrumbs from '../components/Breadcrumbs';
+
 const Blog = () => {
     return (
         <section className="pt-32 pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center">
+            <Breadcrumbs className="justify-center" />
             <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mb-6">
                 Insights & Blog
             </h1>

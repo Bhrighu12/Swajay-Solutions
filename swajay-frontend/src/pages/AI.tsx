@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const AI = () => {
     return (
@@ -6,6 +7,7 @@ const AI = () => {
             {/* Hero Section */}
             <section className="w-full bg-gradient-to-r from-[#0B1221] to-[#1a233b] py-24 px-6 md:px-16 text-white min-h-[400px] flex flex-col justify-center">
                 <div className="max-w-6xl mx-auto w-full">
+                    <Breadcrumbs />
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

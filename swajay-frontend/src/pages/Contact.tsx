@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const Contact = () => {
     return (
@@ -11,6 +12,7 @@ const Contact = () => {
 
             <div className="container mx-auto max-w-6xl relative z-10">
                 <div className="text-center mb-16">
+                    <Breadcrumbs className="justify-center" />
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
