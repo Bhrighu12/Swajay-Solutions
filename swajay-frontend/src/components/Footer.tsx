@@ -33,11 +33,10 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-semibold mb-4">Services</h4>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-primary transition-colors">AI & ML Solutions</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Data Engineering</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Cloud Solutions</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Custom Development</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Business Intelligence</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Engineering Services</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">AI & Advanced Automation</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Data & Business Intelligence</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Secure Cloud & Integration</a></li>
                         </ul>
                     </div>
 

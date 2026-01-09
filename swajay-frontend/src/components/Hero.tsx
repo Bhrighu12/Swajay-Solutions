@@ -27,22 +27,28 @@ const Hero = () => {
                 </div>
 
                 {/* Right Visual */}
-                <div className="md:w-1/2 flex justify-center md:justify-end animate-float">
-                    {/* Glass Card Container for Logo to make dark text readable */}
-                    <div className="relative p-10 bg-white/5 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden hover:bg-white/10 transition-colors duration-500 group">
-                        <style>
-                            {`
-                    .logo-glow {
-                      filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
-                    }
-                  `}
-                        </style>
-                        <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-50"></div>
-                        <img
-                            src=""
-                            alt="Swajay Solutions Hero"
-                            className="relative z-10 w-64 md:w-96 logo-glow"
-                        />
+                {/* Right Visual */}
+                <div className="md:w-1/2 flex justify-center md:justify-end mt-12 md:mt-0 relative z-20">
+                    {/* Ambient Glow behind the card */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/30 blur-[100px] rounded-full pointer-events-none"></div>
+
+                    {/* Gradient Border Wrapper */}
+                    <div className="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/20 via-white/5 to-primary/50 shadow-2xl">
+                        {/* Glass Container */}
+                        <div className="relative bg-[#0B1221]/80 backdrop-blur-2xl rounded-[23px] p-8 md:p-10 border border-white/5 overflow-hidden group transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,180,216,0.2)]">
+
+                            {/* Inner Lighting Effect */}
+                            <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-white/5 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                            {/* Grid Pattern Overlay (Optional for tech feel) */}
+                            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-overlay"></div>
+
+                            <img
+                                src="/Swajay-Hero.png"
+                                alt="Swajay Solutions Hero"
+                                className="relative z-10 w-full max-w-[380px] h-auto drop-shadow-2xl transform transition-transform duration-700 ease-out group-hover:scale-105"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
