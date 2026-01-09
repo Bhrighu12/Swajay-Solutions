@@ -26,10 +26,10 @@ const Hero = () => {
                         Empowering your business with cutting-edge AI and seamless digital solutions. We turn your vision into reality.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 md:gap-5">
-                        <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-[0_0_25px_rgba(0,180,216,0.6)] hover:shadow-[0_0_35px_rgba(0,180,216,0.8)]">
+                        <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-full hover:scale-105 transition-all  hover:shadow-[0_0_35px_rgba(0,180,216,0.8)]">
                             Get Started
                         </button>
-                        <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-[0_0_25px_rgba(0,180,216,0.6)] hover:shadow-[0_0_35px_rgba(0,180,216,0.8)]">
+                        <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-full hover:scale-105 transition-all  hover:shadow-[0_0_35px_rgba(0,180,216,0.8)]">
                             Learn More
                         </button>
                     </div>
