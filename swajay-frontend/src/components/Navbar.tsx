@@ -27,12 +27,12 @@ const Navbar = () => {
             megaMenu: true,
             columns: [
                 {
-                    title: "Our Expertise",
-                    items: ["Web Development", "Mobile Apps", "Cloud Solutions", "DevOps"]
+                    title: "Mortgage Functional Capabilities",
+                    items: ["Document Processing", "Title Search", "Compliance & Quality", "LOS (Loan Origination System)", "Process Automation", "Curative Services"]
                 },
                 {
-                    title: "Consulting",
-                    items: ["Digital Transformation", "IT Strategy", "Process Optimization", "Tech Audit"]
+                    title: "Technology Excellence",
+                    items: ["Engineering Services", "AI & Advanced Automation", "Data & Business Intelligence", "Secure Cloud & Integrationt"]
                 }
             ],
             featured: {
