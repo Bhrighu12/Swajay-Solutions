@@ -1,6 +1,6 @@
 const CTASection = () => {
     return (
-        <section className="bg-[#0B1221] py-24 text-center relative overflow-hidden">
+        <section className="bg-black py-24 text-center relative overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 

@@ -27,16 +27,10 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="relative py-24 overflow-hidden" style={{
-            background: `
-                radial-gradient(circle at top right, rgba(0, 180, 216, 0.08), transparent 60%),
-                radial-gradient(circle at bottom left, rgba(114, 9, 183, 0.06), transparent 55%),
-                linear-gradient(180deg, #f9fbff 0%, #f4f7fc 100%)
-            `
-        }}>
+        <section className="relative py-24 overflow-hidden bg-black">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-secondary">Why Swajay Solutions?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white">Why Swajay Solutions?</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                         We combine deep mortgage and BFSI expertise with modern AI and cloud technology to deliver measurable business outcomes.
                     </p>

@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#0B1221] pb-20 md:pb-0">
+        <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pb-20 md:pb-0">
             {/* Dynamic Background Elements */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] animate-pulse"></div>
