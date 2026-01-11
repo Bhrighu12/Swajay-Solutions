@@ -1,31 +1,14 @@
 import { motion } from "framer-motion";
 import Breadcrumbs from '../components/Breadcrumbs';
+import PageHero from '../components/PageHero';
 
 const AI = () => {
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero Section */}
-            <section className="w-full bg-gradient-to-r from-[#0B1221] to-[#1a233b] py-24 px-6 md:px-16 text-white min-h-[400px] flex flex-col justify-center">
-                <div className="max-w-6xl mx-auto w-full">
-                    <Breadcrumbs />
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="text-5xl md:text-6xl font-bold mb-6"
-                    >
-                        AI & Automation
-                    </motion.h1>
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-lg md:text-xl text-gray-300 max-w-3xl leading-relaxed"
-                    >
-                        We apply specific AI solutions to mission-critical mortgage and title processes, transforming time-consuming tasks into compliant, automated workflows
-                    </motion.p>
-                </div>
-            </section>
+            <PageHero
+                title="AI & Automation"
+                subtitle="We apply specific AI solutions to mission-critical mortgage and title processes, transforming time-consuming tasks into compliant, automated workflows"
+            />
 
             {/* Eliminating Manual Bottlenecks Section */}
             <section className="py-24 px-6 md:px-16 bg-white">

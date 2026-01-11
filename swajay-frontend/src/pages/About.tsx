@@ -2,6 +2,7 @@ import { motion, useMotionValue, useTransform, animate, useInView } from "framer
 import { useEffect, useRef } from "react";
 
 import Breadcrumbs from '../components/Breadcrumbs';
+import PageHero from '../components/PageHero';
 
 function Counter({ from = 0, to, duration = 2, suffix = "" }: { from?: number; to: number; duration?: number; suffix?: string }) {
     const count = useMotionValue(from);
@@ -22,28 +23,10 @@ function Counter({ from = 0, to, duration = 2, suffix = "" }: { from?: number; t
 const About = () => {
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero Section */}
-            <section className="w-full bg-[#0B1221] py-24 px-6 md:px-16 text-white min-h-[400px] flex flex-col justify-center">
-                <div className="max-w-6xl mx-auto w-full">
-                    <Breadcrumbs />
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="text-5xl md:text-6xl font-bold mb-6"
-                    >
-                        About Swajay
-                    </motion.h1>
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-lg md:text-xl text-gray-300 max-w-3xl leading-relaxed"
-                    >
-                        Decades of expertise, modern innovation, and a commitment to solving real business challenges
-                    </motion.p>
-                </div>
-            </section>
+            <PageHero
+                title="About Swajay"
+                subtitle="Decades of expertise, modern innovation, and a commitment to solving real business challenges"
+            />
 
             {/* Mission Section */}
             <section className="py-20 px-6 md:px-16 overflow-hidden">

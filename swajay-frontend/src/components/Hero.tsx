@@ -1,63 +1,71 @@
 const Hero = () => {
     return (
-        <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pb-20 md:pb-0">
-            {/* Dynamic Background Elements */}
-            <div className="absolute inset-0 z-0">
-                <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] animate-pulse"></div>
-                <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-accent/20 rounded-full blur-[100px] animate-pulse delay-1000"></div>
-                <div className="absolute top-[20%] left-[15%] w-[300px] h-[300px] bg-highlight/10 rounded-full blur-[80px] animate-bounce delay-700 duration-[10000ms]"></div>
-            </div>
+        <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#000000] pb-0 pt-20 md:pt-0">
 
-            {/* Noise Overlay for Texture */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay z-0 pointer-events-none"></div>
-
-            {/* Subtle Grid for Depth */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,black,transparent)] z-0"></div>
-
-            <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 pt-24 md:pt-0">
-
-                {/* Left Content */}
-                <div className="text-center md:text-left md:w-1/2 space-y-6 md:space-y-8 animate-fade-in-up">
-                    <h1 className="text-3xl sm:text-4xl md:text-7xl font-extrabold tracking-tight leading-tight text-white drop-shadow-lg">
-                        Innovate with <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-highlight filter drop-shadow-md">Swajay Solutions</span>
-                    </h1>
-                    <p className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0 font-light leading-relaxed">
-                        Empowering your business with cutting-edge AI and seamless digital solutions. We turn your vision into reality.
-                    </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 md:gap-5">
-                        <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-full hover:scale-105 transition-all  hover:shadow-[0_0_35px_rgba(0,180,216,0.8)]">
-                            Get Started
-                        </button>
-                        <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-full hover:scale-105 transition-all  hover:shadow-[0_0_35px_rgba(0,180,216,0.8)]">
-                            Learn More
-                        </button>
-                    </div>
+            {/* Professional Background */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
+                {/* Image Background */}
+                <div className="absolute inset-0 z-0 opacity-70">
+                    <img
+                        src="/Swajay-Hero.png"
+                        alt="Background"
+                        className="w-full h-full object-cover object-center scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/30 to-transparent"></div>
                 </div>
 
-                {/* Right Visual */}
-                {/* Right Visual */}
-                <div className="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0 relative z-20">
-                    {/* Ambient Glow behind the card */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/30 blur-[100px] rounded-full pointer-events-none"></div>
+                {/* Subtle Moving Glows */}
+                <div className="absolute top-[20%] left-[20%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] animate-pulse mix-blend-screen"></div>
+                <div className="absolute bottom-[20%] right-[20%] w-[600px] h-[600px] bg-accent/10 rounded-full blur-[100px] animate-pulse delay-1000 mix-blend-screen"></div>
+            </div>
 
-                    {/* Gradient Border Wrapper */}
-                    <div className="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/20 via-white/5 to-primary/50 shadow-2xl">
-                        {/* Glass Container */}
-                        <div className="relative bg-[#0B1221]/80 backdrop-blur-2xl rounded-[23px] p-6 md:p-10 border border-white/5 overflow-hidden group transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,180,216,0.2)]">
+            {/* Noise Texture */}
+            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] mix-blend-overlay z-0 pointer-events-none"></div>
 
-                            {/* Inner Lighting Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-white/5 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            {/* Grid Overlay */}
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black_40%,transparent_100%)] z-0 pointer-events-none"></div>
 
-                            {/* Grid Pattern Overlay (Optional for tech feel) */}
-                            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-overlay"></div>
+            <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center gap-10">
 
-                            <img
-                                src="/Swajay-Hero.png"
-                                alt="Swajay Solutions Hero"
-                                className="relative z-10 w-full max-w-[280px] md:max-w-[380px] h-auto drop-shadow-2xl transform transition-transform duration-700 ease-out group-hover:scale-105"
-                            />
+                {/* Main Text Content */}
+                <div className="max-w-5xl space-y-8 animate-fade-in-up">
+
+                    {/* Badge / Pill */}
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-4 shadow-[0_0_15px_rgba(0,180,216,0.3)] hover:bg-white/10 transition-colors cursor-default">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        <span className="text-sm font-medium text-gray-200 tracking-wide uppercase shadow-black drop-shadow-md">Next Gen AI Solutions</span>
+                    </div>
+
+                    <h1 className="text-5xl sm:text-7xl md:text-9xl font-extrabold tracking-tight leading-[1] text-white drop-shadow-2xl">
+                        Innovate with <br />
+                        <div className="relative inline-block mt-2">
+                            <span className="absolute inset-0 bg-gradient-to-r from-[#00ffd5] via-primary to-[#0077ff] blur-2xl opacity-30 animate-pulse"></span>
+                            <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-[#00ffd5] via-primary to-[#0077ff] filter drop-shadow-lg animate-[gradient-xy_8s_ease_infinite] bg-[length:200%_auto]">
+                                Swajay Solutions
+                            </span>
                         </div>
+                    </h1>
+
+                    <p className="text-xl md:text-3xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-lg">
+                        Empowering your business with cutting-edge AI and seamless digital solutions. <br className="hidden md:block" /> We turn your vision into reality.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
+                        <button className="group relative px-6 py-3 bg-primary text-white font-bold text-base rounded-full hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] overflow-hidden">
+                            <span className="relative z-10 flex items-center gap-2">
+                                Get Started
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5 group-hover:translate-x-1 transition-transform">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </span>
+                        </button>
+                        <button className="px-6 py-3 bg-primary border border-white/30 text-white font-bold text-base rounded-full hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                            Learn More
+                        </button>
                     </div>
                 </div>
             </div>
