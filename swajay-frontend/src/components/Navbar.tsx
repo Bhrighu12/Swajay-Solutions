@@ -134,7 +134,18 @@ const Navbar = () => {
                                             <div className="p-8 grid grid-cols-12 gap-8">
                                                 {link.columns?.map((col, idx) => (
                                                     <div key={idx} className="col-span-4">
-                                                        <h3 className="text-sm font-bold text-gray-400 tracking-wider uppercase mb-4 border-b border-white/10 pb-2">{col.title}</h3>
+                                                        <NavLink
+                                                            to={col.title === "Mortgage Functional Capabilities" ? "/services?tab=mortgage" : "/services?tab=technology"}
+                                                            onClick={(e) => {
+                                                                setIsOpen(false);
+                                                                // Force reload if already on the page to trigger useEffect or just let NavLink handle it
+                                                            }}
+                                                            className="block"
+                                                        >
+                                                            <h3 className="text-sm font-bold text-gray-400 tracking-wider uppercase mb-4 border-b border-white/10 pb-2 hover:text-primary transition-colors cursor-pointer">
+                                                                {col.title}
+                                                            </h3>
+                                                        </NavLink>
                                                         <ul className="space-y-3">
                                                             {col.items.map((item, itemIdx) => (
                                                                 <li key={itemIdx}>

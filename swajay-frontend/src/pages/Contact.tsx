@@ -52,7 +52,7 @@ const Contact = () => {
                                         Email Us
                                     </h3>
                                     <p className="text-gray-300 ml-7 break-all">
-                                        contact@swajaysolutions.com
+                                        info@swajaysolutions.com
                                     </p>
                                 </div>
                             </div>
@@ -82,11 +82,11 @@ const Contact = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">Full Name</label>
-                                        <input type="text" id="name" className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" placeholder="John Doe" />
+                                        <input type="text" id="name" className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" placeholder="Your name" />
                                     </div>
                                     <div>
                                         <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
-                                        <input type="email" id="email" className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" placeholder="john@example.com" />
+                                        <input type="email" id="email" className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" placeholder="name@example.com" />
                                     </div>
                                 </div>
 
