@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Breadcrumbs from '../components/Breadcrumbs';
+
 import PageHero from '../components/PageHero';
 
 const Contact = () => {

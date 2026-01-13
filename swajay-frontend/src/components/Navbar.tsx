@@ -136,7 +136,7 @@ const Navbar = () => {
                                                     <div key={idx} className="col-span-4">
                                                         <NavLink
                                                             to={col.title === "Mortgage Functional Capabilities" ? "/services?tab=mortgage" : "/services?tab=technology"}
-                                                            onClick={(e) => {
+                                                            onClick={() => {
                                                                 setIsOpen(false);
                                                                 // Force reload if already on the page to trigger useEffect or just let NavLink handle it
                                                             }}

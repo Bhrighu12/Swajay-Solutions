@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-import Breadcrumbs from '../components/Breadcrumbs';
+
 import PageHero from '../components/PageHero';
 
 function Counter({ from = 0, to, duration = 2, suffix = "" }: { from?: number; to: number; duration?: number; suffix?: string }) {
