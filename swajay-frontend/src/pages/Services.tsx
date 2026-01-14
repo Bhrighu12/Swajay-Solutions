@@ -25,7 +25,7 @@ const Services = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white relative">
+        <div className="min-h-screen bg-[#0B1221] relative">
             <PageHero
                 title="Services"
                 subtitle="We move beyond traditional BPO by embedding advanced technology—from proprietary applications to sophisticated AI models—directly into your workflows"
@@ -35,9 +35,9 @@ const Services = () => {
             <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-40 hidden md:block">
                 <button
                     onClick={toggleTab}
-                    className="bg-primary text-white font-bold py-4 px-2 rounded-l-xl shadow-2xl hover:bg-highlight transition-all duration-300 flex flex-col items-center gap-2 group border border-white/20"
+                    className="bg-primary text-white font-bold py-4 px-2 rounded-l-xl shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:bg-[#2563EB] transition-all duration-300 flex flex-col items-center gap-2 group border border-white/20 backdrop-blur-md"
                 >
-                    <span className="writing-vertical-lr uppercase tracking-wider text-sm">
+                    <span className="writing-vertical-lr uppercase tracking-wider text-sm shadow-sm">
                         {activeTab === 'mortgage' ? 'View Technology Excellence' : 'View Mortgage Capabilities'}
                     </span>
                     <svg
@@ -55,7 +55,7 @@ const Services = () => {
             <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 md:hidden w-[90%] text-center">
                 <button
                     onClick={toggleTab}
-                    className="bg-primary text-white font-bold py-3 px-6 rounded-full shadow-2xl hover:bg-highlight transition-all duration-300 w-full flex items-center justify-center gap-2"
+                    className="bg-primary text-white font-bold py-3 px-6 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:bg-[#2563EB] transition-all duration-300 w-full flex items-center justify-center gap-2 border border-white/20 backdrop-blur-md"
                 >
                     <span>{activeTab === 'mortgage' ? 'View Tech Capabilities' : 'View Mortgage Caps'}</span>
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -74,13 +74,13 @@ const Services = () => {
                         transition={{ duration: 0.3 }}
                     >
                         {/* Mortgage Functional Capabilities Section */}
-                        <section className="py-24 px-6 md:px-16 bg-white min-h-[60vh]">
+                        <section className="py-24 px-6 md:px-16 bg-gradient-to-b from-[#0F172A] to-[#1E293B] min-h-[60vh]">
                             <div className="max-w-7xl mx-auto">
                                 <div className="mb-16">
-                                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                                         Mortgage Functional Capabilities
                                     </h2>
-                                    <p className="text-gray-600 text-lg">
+                                    <p className="text-gray-300 text-lg">
                                         End-to-end mortgage processing with AI-powered efficiency
                                     </p>
                                 </div>
@@ -155,21 +155,21 @@ const Services = () => {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: index * 0.1 }}
-                                            className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
+                                            className="bg-white/5 p-8 rounded-xl border border-white/10 shadow-lg backdrop-blur-md hover:bg-white/10 transition-all duration-300 group"
                                         >
-                                            <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                                            <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors text-primary">
                                                 {item.icon}
                                             </div>
-                                            <h3 className="text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
-                                            <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                                            <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
+                                            <p className="text-gray-300 mb-6 leading-relaxed text-sm">
                                                 {item.desc}
                                             </p>
 
                                             <div>
-                                                <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Key Benefits</p>
+                                                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">Key Benefits</p>
                                                 <ul className="space-y-2">
                                                     {item.benefits.map((benefit, i) => (
-                                                        <li key={i} className="flex items-center gap-2 text-sm text-gray-700 font-medium">
+                                                        <li key={i} className="flex items-center gap-2 text-sm text-gray-400 font-medium">
                                                             <div className="w-1.5 h-1.5 rounded-full bg-primary/60"></div>
                                                             {benefit}
                                                         </li>
@@ -191,13 +191,13 @@ const Services = () => {
                         transition={{ duration: 0.3 }}
                     >
                         {/* Blueprint of Technology Excellence Section */}
-                        <section className="py-24 px-6 md:px-16 bg-gray-50 min-h-[60vh]">
+                        <section className="py-24 px-6 md:px-16 bg-[#1E293B] min-h-[60vh]">
                             <div className="max-w-7xl mx-auto">
                                 <div className="mb-16">
-                                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                                         Blueprint of Technology Excellence
                                     </h2>
-                                    <p className="text-gray-600 text-lg max-w-4xl">
+                                    <p className="text-gray-300 text-lg max-w-4xl">
                                         Swajay leverages its multi-industry expertise to deliver secure, scalable, and outcome-driven digital solutions
                                     </p>
                                 </div>
@@ -251,20 +251,20 @@ const Services = () => {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: index * 0.1 }}
-                                            className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
+                                            className="bg-white/5 p-8 rounded-xl border border-white/10 shadow-lg backdrop-blur-md hover:bg-white/10 transition-all duration-300 group"
                                         >
-                                            <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                                            <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors text-primary">
                                                 {item.icon}
                                             </div>
-                                            <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                                            <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                                            <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                                            <p className="text-gray-300 mb-6 leading-relaxed text-sm">
                                                 {item.desc}
                                             </p>
 
                                             <ul className="space-y-2">
                                                 {item.services.map((service, i) => (
-                                                    <li key={i} className="flex items-center gap-2 text-sm text-gray-500 font-medium">
-                                                        <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                                    <li key={i} className="flex items-center gap-2 text-sm text-gray-400 font-medium">
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-primary/60"></div>
                                                         {service}
                                                     </li>
                                                 ))}

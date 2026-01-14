@@ -6,17 +6,19 @@
   font-weight: 400;
 
   /* Brand Colors */
-  --color-primary: #00B4D8;
-  /* Teal/Cyan */
-  --color-secondary: #000000;
-  /* Navy Blue */
-  --color-accent: #0077B6;
-  /* Royal Blue */
-  --color-highlight: #90E0EF;
-  /* Light Blue */
+  --color-primary: #3B82F6;
+  /* Electric Blue */
+  --color-secondary: #0F172A;
+  /* Deep Navy */
+  --color-slate: #1E293B;
+  /* Slate */
+  --color-accent: #60A5FA;
+  /* Lighter Blue accent */
+  --color-highlight: #93C5FD;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color-scheme: dark;
+  color: #F8FAFC;
+  /* Soft White */
   background-color: var(--color-secondary);
   /* Dark theme by default for modern look */
 

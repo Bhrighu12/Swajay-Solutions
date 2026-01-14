@@ -9,20 +9,11 @@ interface PageHeroProps {
 
 const PageHero: React.FC<PageHeroProps> = ({ title, subtitle, className = "" }) => {
     return (
-        <section className={`relative w-full pt-32 pb-20 md:pt-40 md:pb-24 flex flex-col items-center justify-center overflow-hidden bg-[#000000] text-center ${className}`}>
+        <section className={`relative w-full pt-32 pb-20 md:pt-40 md:pb-24 flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-center ${className}`}>
 
             {/* Background Layers */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                {/* Image Background */}
-                <div className="absolute inset-0 z-0 opacity-70">
-                    <img
-                        src="/Swajay-Hero.png"
-                        alt="Background"
-                        className="w-full h-full object-cover object-center scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
-                    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/30 to-transparent"></div>
-                </div>
+                {/* Image Background Removed for Gradient */}
 
                 {/* Subtle Moving Glows */}
                 <div className="absolute top-[20%] left-[20%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] animate-pulse mix-blend-screen"></div>

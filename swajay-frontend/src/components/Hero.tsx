@@ -1,19 +1,10 @@
 const Hero = () => {
     return (
-        <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#000000] pb-0 pt-20 md:pt-0">
+        <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#0F172A] to-[#1E293B] pb-0 pt-20 md:pt-0">
 
             {/* Professional Background */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                {/* Image Background */}
-                <div className="absolute inset-0 z-0 opacity-70">
-                    <img
-                        src="/Swajay-Hero.png"
-                        alt="Background"
-                        className="w-full h-full object-cover object-center scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
-                    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/30 to-transparent"></div>
-                </div>
+                {/* Image Background Removed for Gradient */}
 
                 {/* Subtle Moving Glows */}
                 <div className="absolute top-[20%] left-[20%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] animate-pulse mix-blend-screen"></div>
@@ -32,7 +23,7 @@ const Hero = () => {
                 <div className="max-w-5xl space-y-8 animate-fade-in-up">
 
                     {/* Badge / Pill */}
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-4 shadow-[0_0_15px_rgba(0,180,216,0.3)] hover:bg-white/10 transition-colors cursor-default">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-4 shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:bg-white/10 transition-colors cursor-default">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -55,7 +46,7 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
-                        <button className="group relative px-6 py-3 bg-primary text-white font-bold text-base rounded-full hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] overflow-hidden">
+                        <button className="group relative px-6 py-3 bg-primary text-white font-bold text-base rounded-lg hover:scale-105 transition-all duration-300 shadow-[0_4px_14px_0_rgba(59,130,246,0.5)] overflow-hidden">
                             <span className="relative z-10 flex items-center gap-2">
                                 Get Started
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5 group-hover:translate-x-1 transition-transform">
@@ -63,7 +54,7 @@ const Hero = () => {
                                 </svg>
                             </span>
                         </button>
-                        <button className="px-6 py-3 bg-primary border border-white/30 text-white font-bold text-base rounded-full hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                        <button className="px-6 py-3 bg-transparent border border-white/30 text-white font-bold text-base rounded-lg hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)]">
                             Learn More
                         </button>
                     </div>
