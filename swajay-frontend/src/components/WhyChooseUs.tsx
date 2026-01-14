@@ -57,11 +57,11 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="relative py-24 overflow-hidden bg-black">
+        <section className="relative py-24 overflow-hidden bg-white">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white">Why Swajay Solutions?</h2>
-                    <p className="text-white max-w-2xl mx-auto text-lg">
+                    <h2 className="text-3xl md:text-4xl font-bold text-black">Why Swajay Solutions?</h2>
+                    <p className="text-black max-w-2xl mx-auto text-lg">
                         We combine deep mortgage and BFSI expertise with modern AI and cloud technology to deliver measurable business outcomes.
                     </p>
                 </div>

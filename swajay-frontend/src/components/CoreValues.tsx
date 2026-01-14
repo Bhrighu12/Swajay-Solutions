@@ -30,7 +30,7 @@ const CoreValues = () => {
     ];
 
     return (
-        <section className="relative py-24 overflow-hidden bg-black">
+        <section className="relative py-24 overflow-hidden bg-white">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                     {values.map((item, index) => (
